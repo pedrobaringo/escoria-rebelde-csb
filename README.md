@@ -3,7 +3,7 @@
 Para Cambiar los colores de la ficha se debe entrar como cada jugador, ir a los ajustes, ir al módulo Custom CSS (1) (debe haberse instalado y activado previamente). Después abrir el editor (2) y copiar allí el "root" correspondiente al tipo de personaje que va a controlar (3) que se puede encontrar en el archivo UserStyles.css dentro de la carpeta Assets o a continuacuón.
 ![image](https://github.com/user-attachments/assets/542ed419-b08f-4a58-87c6-2d7a0031a2d7)
 
-/*Ronin*/
+`/*Ronin*/
 :root {
 	--theme-color:  #731f38;
 	--alt-theme-color:  #a7756e;
@@ -32,4 +32,4 @@ Para Cambiar los colores de la ficha se debe entrar como cada jugador, ir a los 
 	--theme-color:  #4b7232;
 	--alt-theme-color:  #8ac05a;
 	--light-theme-color: #dfecd1;
-}
+}`
