@@ -1,0 +1,503 @@
+@font-face {
+  font-family: 'StarJedi';
+  src: url('../assets/Starjedi.ttf');
+}
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../assets/centurygothic.ttf');
+}
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url('../assets/centurygothic_bold.ttf');
+}
+:root {
+	--theme-color:  #731f38;
+	--alt-theme-color:  #a7756e;
+	--light-theme-color: #d1b6b5;
+}
+.header-fields {
+	position:relative;
+}
+div.custom-system-sheet-actions:first-of-type {
+	top:30px;
+}
+.custom-system-sheet-actions {
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.chat-message .message-content h1{
+font-family:'StarJedi';
+	font-size:30px;
+	text-align:center;
+	border:0px;
+	color:white;
+}
+.chat-message .message-content h2{
+	font-family:'StarJedi';
+	font-size:25px;
+	text-align:center;
+	border:0px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.chat-message .message-content h3{
+	font-family:'StarJedi';
+	font-size:15px;
+	text-align:center;
+	border:0px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.chat-message .message-content {
+	font-family:'StarJedi';
+	font-size:15px;
+	text-align:center;
+	border:0px;
+	color:white;
+	}
+.chat-message {
+	background: url('../assets/3.jpg')center;;
+	background-size:contain;
+}
+.chat-message .message-header .message-sender{
+	font-family: 'StarJedi';
+	text-align:center;
+	font-size: 1vw;
+	text-wrap: wrap;
+	line-height:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	color: white;
+	white-space: normal;
+}
+.chat-message .message-header {
+	border-bottom: 2px solid white;
+}
+.message .message-header .message-metadata {
+	flex:0 0 50px;
+	margin-left: 0;
+}
+.message-timestamp {
+	font-family:'CenturyGothic';
+	color:white;
+	text-wrap: wrap;
+	font-size:10px;
+}
+.dice-roll .dice-formula {
+	display:none;
+}
+.dice-roll .dice-tooltip {
+	display: block;
+}
+.dice-tooltip .dice-rolls {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.dice-tooltip .dice-rolls .roll{
+	height:50px;
+	line-height:50px;
+	width:50px;
+	font-size:30px;
+	background-size:100%;
+}
+.dice-tooltip .part-header {
+	display:none;
+}
+.dice-roll .dice-total {
+	display:none;
+}
+.custom-system-actor-content {
+	background: url('../assets/3.jpg')center;
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	font-family:'CenturyGothic';
+	font-size:15px;
+	color: white;
+}
+.panelsup {
+	font-weight:700;
+}
+.custom-system-actor-content input[type="text"], .custom-system-actor-content input[type="number"], .custom-system-actor-content input[type="password"], .custom-system-actor-content input[type="date"], .custom-system-actor-content input[type="time"], .custom-system-actor-content input[type="search"], .custom-system-template-select > select, .custom-system-actor select {
+	color: white;
+}
+.marginzero {
+	margin:0px;
+}
+
+.sheet header.sheet-header h1 input {
+	font-family:'StarJedi';
+	text-transform:lowercase;
+}
+.clasedrop {
+	font-family:'StarJedi';
+	text-transform:lowercase;
+}
+.clasedrop option {
+	background-color:black;
+}
+.custom-system-rollable {
+	color:black;
+}
+.titleblack :nth-child(even) {
+	
+}
+.titleblack {
+	color:black;
+	font-family:'StarJedi';
+	text-transform:lowercase;
+	font-size:30px;
+	text-shadow: -2px 0 #d8d7d6, 0 2px #d8d7d6, 2px 0 #d8d7d6,-2px -2px #d8d7d6,2px -2px #d8d7d6,-2px 2px #d8d7d6,2px 2px #d8d7d6, 0 -2px #d8d7d6;
+}
+.titlewhite {
+	color:white;
+	font-family:'StarJedi';
+	text-transform:lowercase;
+	font-size:30px;
+	text-shadow: -2px 0 black, -2px -2px black, 2px 2px black, -2px 2px black, 2px -2px black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.panelhab {
+	display:flex;
+	background: rgb(63,64,63);
+	background: linear-gradient(180deg, rgba(63,64,63,1) 0%, rgba(238,238,238,1) 100%);
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	width:50%;
+	flex-direction: column;
+    align-items: center;
+	margin-left:25%;
+}
+.tiradapanel {
+	display:grid;
+	grid-template-rows: 25px 40px;
+	background-color:var(--theme-color);
+	margin-bottom:20px;
+	margin-top:10px;
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	height:57px;
+	width:200%;
+}
+.tiradapanelalt {
+	background-color:var(--alt-theme-color);
+}
+.panelbig {
+	display:grid;
+	grid-template-columns: 60% 40%;
+}
+.panelpeligro {
+	display:flex;
+	background: rgb(63,64,63);
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	flex-direction: column;
+}
+.peligrovalue {
+	margin:0px;
+	color:white;
+	font-family:'StarJedi';
+	text-transform:lowercase;
+	font-size:70px;
+	text-shadow: -2px 0 black, -2px -2px black, 2px 2px black, -2px 2px black, 2px -2px black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.peligrovalue input[type="text"] {
+	height:100%;
+	border:0px;
+	background:transparent;
+	text-shadow: -2px 0 black, -2px -2px black, 2px 2px black, -2px 2px black, 2px -2px black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.peligrovalue .custom-system-number-field-control-plus {
+	background-color:white;
+	color:black;
+}
+.peligrovalue .custom-system-number-field-control-minus {
+	background-color:white;
+	color:black;
+}
+.peligrolab {
+	margin-bottom:-30%;
+	margin-left:0px;
+}
+.peligroicon {
+	background: url('../assets/Peligro.webp') center;
+	background-size:80px;
+	background-repeat: no-repeat;
+	margin-top:-25%;
+	margin-left:0px;
+}
+.panelestrella {
+	background-color:var(--theme-color);
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	margin-left:40px;
+	padding:5px 20px 0px 20px;
+	position:relative;
+}
+.estrellatext h2 {
+	font-family:'CenturyGothicBold';
+	font-weight: 800;
+	font-size:25px;
+	border:0px;
+	color:var(--alt-theme-color)
+}
+.estrellatext {
+	font-size:20px;
+	border:0px;
+}
+.naveicon {
+	position:absolute;
+	left:-10%;
+	top:-5%;
+	margin:0px;
+    background: url('../assets/NaveIcon.webp');
+	background-size:60px;
+	background-repeat: no-repeat;
+	flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+}
+.staricon {
+	position:absolute;
+	left:-105%;
+	top:-5%;
+}
+.staricon input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/Estrella_Unchecked.webp');
+	background-size:60px;
+	background-repeat: no-repeat;
+	flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.staricon input[type="checkbox"]:checked {
+    background: url('../assets/Estrella.webp');
+	background-size:60px;
+	background-repeat: no-repeat;
+}
+.backrasgos {
+	background: rgb(63,64,63);
+	background: linear-gradient(90deg, rgba(63,64,63,1) 0%, rgba(238,238,238,1) 100%);
+	margin-top:10px;
+	margin-bottom:20px;
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	padding:5px;
+	display:grid;
+	grid-template-columns: 20% 80%;
+}
+.rasgotitle {
+	font-size:25px;
+	font-weight:700;
+	font-style: italic;
+}
+.barrasrasgos {
+	font-size: 25px;
+	font-weight:700;
+	width:100%;
+	margin-bottom:2px;
+	text-align:right;
+}
+.tabbedpanel .tabs {
+	font-family:'StarJedi';
+	text-transform:lowercase;
+	font-size:20px;
+}
+.checkhex input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/CheckHex.webp');
+	background-size:30px;
+	background-repeat: no-repeat;
+	flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.checkhex input[type="checkbox"]:checked {
+    background: url('../assets/CheckHex_Checked.webp');
+	background-size:30px;
+	background-repeat: no-repeat;
+}
+.checkhex input[type="radio"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	margin:0px;
+    background: url('../assets/CheckHex.webp');
+	background-size:30px;
+	background-repeat: no-repeat;
+	flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.checkhex input[type="radio"]:checked {
+    background: url('../assets/CheckHex_Checked.webp');
+	background-size:30px;
+	background-repeat: no-repeat;
+}
+.panelpronom {
+	background-color:var(--theme-color);
+	padding-top:3px;
+	display:grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	gap:10px;
+}
+.panelotro {
+	display:grid;
+	grid-template-columns: auto 50px;
+	gap:0px;
+}
+.panelrol {
+	padding-top:3px;
+}
+.panelequil {
+	background: rgb(27,27,27);
+	background: linear-gradient(270deg, rgba(27,27,27,1) 0%, rgba(238,238,238,1) 100%);
+	padding:5px;
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	margin-bottom:4px;
+	text-shadow: -1px 0 black, -1px -1px black, 1px 1px black, -1px 1px black, 1px -1px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.equilibriotitle {
+	font-family:'StarJedi';
+	font-weight:normal;
+	text-transform:lowercase;
+}
+.panelluzosc {
+	gap:0px;
+}
+.equil{
+	margin:0px;
+}
+.rasgospanel {
+	display:grid;
+	grid-template-columns: 35px auto;
+	gap:4px;
+	margin-left:10px;
+}
+.pron_otro_lab input[type="text"] {
+	border-width:0px 0px 1.5px 0px;
+	border-color:white;
+	border-radius:0px;
+	font-weight:700;
+}
+.paneltrasfondo {
+	position:relative;
+	background-color:white;
+	color:black;
+	font-weight:bold;
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	margin-left:10px;
+	padding:15px 20px 5px 20px;
+	margin-top:30px;
+}
+.panelgrantrans {
+	position:relative;
+}
+.storyicon {
+	position:absolute;
+	margin:0px;
+    background: url('../assets/TrasfondoIcon.webp');
+	background-size:60px;
+	background-repeat: no-repeat;
+	flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+	left:0%;
+	top:0%;
+}
+.panelvinculo {
+	position:relative;
+	background-color:var(--light-theme-color);
+	color:black;
+	font-weight:bold;
+	border: 2px solid #d8d7d6;
+	border-radius:10px;
+	margin-right:10px;
+	padding:15px 20px 5px 20px;
+	margin-top:30px;
+}
+.relationicon {
+	position:absolute;
+	margin:0px;
+    background: url('../assets/VinculosIcon.webp');
+	background-size:60px;
+	background-repeat: no-repeat;
+	flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+	right:0%;
+	top:0%;
+}
+.paneloscuro {
+	background-color:#404141;
+}
+.panelmenososcuro {
+	background-color:#575551;
+}
+.paneloscurolight {
+	background-color:#bcb9b8;
+}
+.navetext h2{
+	color: #efda47;
+}
+.custom-system-user-inputs thead{
+	display: none;
+}
+.custom-system-user-inputs {
+	background:transparent;
+	border:0px;
+	font-family:'StarJedi';
+	text-transform:lowercase;
+	font-size:15px;
+}
+.custom-system-user-inputs tr:nth-child(even){
+	background:transparent;
+	border:0px;
+}
+span:has(>#tirada-0) {
+	display:grid;
+	grid-template-columns: 30% 30% 40%;
+	grid-template-rows:50% 35%;
+	height:50px;
+	text-align:center;
+	gap:5px;
+}
+label[for="tirada-0"] {
+	order:1;
+}
+#tirada-0 {
+	order:4;
+}
+label[for="tirada-1"] {
+	order:2;
+}
+#tirada-1 {
+	order:5
+}
+label[for="tirada-2"] {
+	order:3;
+}
+#tirada-2 {
+	order:6;
+}
+.chat-message.whisper {
+	background: url(../assets/3.jpg) center;
+    background-size: contain;
+}
+.chat-message button {
+	font-family:'StarJedi';
+	text-transform:lowercase;
+	font-size:15px;
+	color:white;
+	border-width:2px;
+	background:transparent;
+}

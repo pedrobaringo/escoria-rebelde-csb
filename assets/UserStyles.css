@@ -1,0 +1,30 @@
+/*Ronin*/
+:root {
+	--theme-color:  #731f38;
+	--alt-theme-color:  #a7756e;
+	--light-theme-color: #d1b6b5;
+}
+/*Revolucionario*/
+:root {
+	--theme-color:  #816e8e;
+	--alt-theme-color:  #a58cbe;
+	--light-theme-color: #d6d0da;
+}
+/*Robot*/
+:root {
+	--theme-color:  #006991;
+	--alt-theme-color:  #00adee;
+	--light-theme-color: #b9e6fb;
+}
+/*Renegado*/
+:root {
+	--theme-color:  #f47a3e;
+	--alt-theme-color:  #fba721;
+	--light-theme-color: #ece4c4;
+}
+/*Canalla*/
+:root {
+	--theme-color:  #4b7232;
+	--alt-theme-color:  #8ac05a;
+	--light-theme-color: #dfecd1;
+}
