@@ -32,4 +32,4 @@ Para Cambiar los colores de la ficha se debe entrar como cada jugador, ir a los 
 	--theme-color:  #4b7232;
 	--alt-theme-color:  #8ac05a;
 	--light-theme-color: #dfecd1;
-}```
+}
