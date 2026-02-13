@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'StarJedi';
-  src: url('../assets/Starjedi.ttf');
+  src: url('../assets/StarJedi-Regular.otf');
 }
 @font-face {
   font-family: 'CenturyGothic';
@@ -15,16 +15,88 @@
 	--alt-theme-color:  #a7756e;
 	--light-theme-color: #d1b6b5;
 }
-.header-fields {
-	position:relative;
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
+	background: url('../assets/3.jpg')center;
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	font-family:'CenturyGothic';
+	font-size:15px;
+	color: white;
 }
-div.custom-system-sheet-actions:first-of-type {
-	top:30px;
+.character .grid {
+	margin-top:0px;
+	margin-bottom:0px;
 }
-.custom-system-sheet-actions {
-	position:absolute;
-	right:0px;
-	top:0px;
+.character input[type=text], .equippableItem input[type=text], .custom-dialog input[type=text]{
+	box-shadow:0px 0px;
+	color: white;
+    background:transparent;
+    border:1px solid white;
+}
+.character input[type=number], .equippableItem input[type=number], .custom-dialog input[type=number]{
+	box-shadow:0px 0px;
+	color: white;
+    background:transparent;
+    border:1px solid white;
+}
+.character select, .equippableItem select, .custom-dialog select{
+	background:transparent;
+	color: white;
+    border:1px solid white;
+}
+.custom-system-user-inputs td button {
+    color: white;
+}
+.character summary:before, .equippableItem summary:before, .custom-dialog summary:before {
+	border-color: transparent transparent transparent #000000;
+}
+.character input[type="checkbox"]::before, .equippableItem input[type="checkbox"]::before, .custom-dialog input[type="checkbox"]::before {
+    content:"\f0c8";
+    color: white;
+    font-weight:normal;
+}
+.character  input[type="checkbox"]:checked::after, .equippableItem  input[type="checkbox"]:checked::after, .custom-dialog  input[type="checkbox"]:checked::after {
+    content: "\f14a";
+    color: white;
+}
+.character input[type="checkbox"]:checked::before, .equippableItem input[type="checkbox"]:checked::before,  .custom-dialog input[type="checkbox"]:checked::before {
+    content: "\f14a\f14a";
+    color: transparent;
+}
+.custom-dialog .form-group > label {
+	color: white;
+}
+.character table, .equippableItem table, .custom-dialog table {
+	background:transparent;
+}
+.custom-system-number-field-control {
+	background:transparent;
+	color:white;
+	border:1px solid white;
+}
+.character input[type="radio"]::before, .equippableItem input[type="radio"]::before, .custom-dialog input[type="radio"]::before {
+    content:"\f10c";
+    color: white;
+    font-weight:normal;
+}
+.character input[type="radio"]:checked::before, .character  input[type="radio"]:checked::after, .equippableItem input[type="radio"]:checked::before,  .equippableItem  input[type="radio"]:checked::after, .custom-dialog input[type="radio"]:checked::before, .custom-dialog  input[type="radio"]:checked::after {
+    content: "\f192";
+    color: white;
+}
+.character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
+  background:transparent;
+  color: white;
+  border: 0px;
+}
+.custom-system-user-input-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove white;
+    color: white
+}
+.custom-dialog .standard-form .form-footer > button {
+  color:white;
+  background:transparent;
+  border: 2px groove white;
 }
 .chat-message .message-content h1{
 font-family:'StarJedi';
@@ -40,6 +112,7 @@ font-family:'StarJedi';
 	border:0px;
 	margin-left:10px;
 	margin-right:10px;
+	color:white;
 }
 .chat-message .message-content h3{
 	font-family:'StarJedi';
@@ -48,9 +121,10 @@ font-family:'StarJedi';
 	border:0px;
 	margin-left:10px;
 	margin-right:10px;
+	color:white;
 }
 .chat-message .message-content {
-	font-family:'StarJedi';
+	font-family:'CenturyGothic';
 	font-size:15px;
 	text-align:center;
 	border:0px;
@@ -58,7 +132,7 @@ font-family:'StarJedi';
 	}
 .chat-message {
 	background: url('../assets/3.jpg')center;;
-	background-size:contain;
+	background-size: contain;
 }
 .chat-message .message-header .message-sender{
 	font-family: 'StarJedi';
@@ -108,14 +182,7 @@ font-family:'StarJedi';
 .dice-roll .dice-total {
 	display:none;
 }
-.custom-system-actor-content {
-	background: url('../assets/3.jpg')center;
-	background-repeat: no-repeat;
- 	background-size: 100% 100%;
-	font-family:'CenturyGothic';
-	font-size:15px;
-	color: white;
-}
+
 .panelsup {
 	font-weight:700;
 }
@@ -168,7 +235,10 @@ font-family:'StarJedi';
     align-items: center;
 	margin-left:25%;
 }
-.tiradapanel {
+.panelhab > :first-child{
+	margin-left:-25%;
+}
+.tiradapanel  > :first-child{
 	display:grid;
 	grid-template-rows: 25px 40px;
 	background-color:var(--theme-color);
@@ -177,12 +247,12 @@ font-family:'StarJedi';
 	border: 2px solid #d8d7d6;
 	border-radius:10px;
 	height:57px;
-	width:200%;
+	width:120%;
 }
-.tiradapanelalt {
+.tiradapanelalt > :first-child{
 	background-color:var(--alt-theme-color);
 }
-.panelbig {
+.panelbig  > :first-child{
 	display:grid;
 	grid-template-columns: 60% 40%;
 }
@@ -218,13 +288,15 @@ font-family:'StarJedi';
 .peligrolab {
 	margin-bottom:-30%;
 	margin-left:0px;
+	margin-top: 24%;
 }
 .peligroicon {
 	background: url('../assets/Peligro.webp') center;
 	background-size:80px;
 	background-repeat: no-repeat;
-	margin-top:-25%;
+	margin-top:10%;
 	margin-left:0px;
+	min-height:60%;
 }
 .panelestrella {
 	background-color:var(--theme-color);
@@ -279,7 +351,7 @@ font-family:'StarJedi';
 	background-size:60px;
 	background-repeat: no-repeat;
 }
-.backrasgos {
+.backrasgos  > :first-child{
 	background: rgb(63,64,63);
 	background: linear-gradient(90deg, rgba(63,64,63,1) 0%, rgba(238,238,238,1) 100%);
 	margin-top:10px;
@@ -302,7 +374,7 @@ font-family:'StarJedi';
 	margin-bottom:2px;
 	text-align:right;
 }
-.tabbedpanel .tabs {
+.tabbedpanel .custom-tabs {
 	font-family:'StarJedi';
 	text-transform:lowercase;
 	font-size:20px;
@@ -336,19 +408,25 @@ font-family:'StarJedi';
     height: 30px;
     cursor: pointer;
 }
+.checkhex input[type="radio"]::before, .checkhex input[type="checkbox"]::before, .staricon input[type="checkbox"]::before {
+	content: "";
+}
+.checkhex input[type="radio"]:checked::before, .checkhex  input[type="radio"]:checked::after,.checkhex input[type="checkbox"]:checked::before, .checkhex  input[type="checkbox"]:checked::after,.staricon input[type="checkbox"]:checked::before, .staricon  input[type="checkbox"]:checked::after {
+	content: "";
+}
 .checkhex input[type="radio"]:checked {
     background: url('../assets/CheckHex_Checked.webp');
 	background-size:30px;
 	background-repeat: no-repeat;
 }
-.panelpronom {
+.panelpronom  > :first-child{
 	background-color:var(--theme-color);
 	padding-top:3px;
 	display:grid;
 	grid-template-columns: auto auto auto auto auto auto;
 	gap:10px;
 }
-.panelotro {
+.panelotro  > :first-child{
 	display:grid;
 	grid-template-columns: auto 50px;
 	gap:0px;
@@ -370,13 +448,13 @@ font-family:'StarJedi';
 	font-weight:normal;
 	text-transform:lowercase;
 }
-.panelluzosc {
+.panelluzosc  > :first-child{
 	gap:0px;
 }
 .equil{
 	margin:0px;
 }
-.rasgospanel {
+.rasgospanel  > :first-child{
 	display:grid;
 	grid-template-columns: 35px auto;
 	gap:4px;
@@ -425,6 +503,7 @@ font-family:'StarJedi';
 	padding:15px 20px 5px 20px;
 	margin-top:30px;
 }
+
 .relationicon {
 	position:absolute;
 	margin:0px;
@@ -437,14 +516,20 @@ font-family:'StarJedi';
 	right:0%;
 	top:0%;
 }
-.paneloscuro {
+.panelestrella.paneloscuro {
 	background-color:#404141;
 }
-.panelmenososcuro {
+.paneloscuro > :first-child{
+	background-color:#404141;
+}
+.panelmenososcuro > :first-child{
 	background-color:#575551;
 }
-.paneloscurolight {
+.paneloscurolight > :first-child{
 	background-color:#bcb9b8;
+}
+.panelvinculo > :first-child {
+	background-color:var(--light-theme-color);
 }
 .navetext h2{
 	color: #efda47;
@@ -463,7 +548,7 @@ font-family:'StarJedi';
 	background:transparent;
 	border:0px;
 }
-span:has(>#tirada-0) {
+span:has(>#tirada-0-) {
 	display:grid;
 	grid-template-columns: 30% 30% 40%;
 	grid-template-rows:50% 35%;
@@ -474,20 +559,52 @@ span:has(>#tirada-0) {
 label[for="tirada-0"] {
 	order:1;
 }
-#tirada-0 {
+#tirada-0- {
 	order:4;
 }
 label[for="tirada-1"] {
 	order:2;
 }
-#tirada-1 {
+#tirada-1- {
 	order:5
 }
 label[for="tirada-2"] {
 	order:3;
 }
-#tirada-2 {
+#tirada-2- {
 	order:6;
+}
+span:has(>#dadopj-4-) {
+	display:grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows:50% 35%;
+	height:50px;
+	text-align:center;
+	gap:5px;
+}
+label[for="dadopj-4-"] {
+	order:1;
+}
+#dadopj-4- {
+	order:5;
+}
+label[for="dadopj-6-"] {
+	order:2;
+}
+#dadopj-6- {
+	order:6
+}
+label[for="dadopj-8-"] {
+	order:3;
+}
+#dadopj-8- {
+	order:7;
+}
+label[for="dadopj-10-"] {
+	order:4;
+}
+#dadopj-10- {
+	order:8;
 }
 .chat-message.whisper {
 	background: url(../assets/3.jpg) center;

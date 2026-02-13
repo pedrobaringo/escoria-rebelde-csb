@@ -1,17 +1,20 @@
 {
   "id": "escoria-rebelde-csb",
   "title": "Escoria Rebelde (CSB)",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13.351"
   },
   "relationships": {
     "systems": [
       {
         "id": "custom-system-builder",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {
+		"minimum": "5.1.0",
+		"verified": "5.1.0"
+		}
       }
     ],
     "recommends": [
@@ -53,5 +56,5 @@
   ],
   "url": "https://github.com/pedrobaringo/escoria-rebelde-csb",
   "manifest": "https://github.com/pedrobaringo/escoria-rebelde-csb/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/escoria-rebelde-csb/releases/download/1.0.0/escoria-rebelde-csb.zip"
+  "download": "https://github.com/pedrobaringo/escoria-rebelde-csb/releases/download/1.2.0/escoria-rebelde-csb.zip"
 }
